@@ -6,7 +6,7 @@ import java.net.Socket;
 public class SocketClient {
 	public void connect() {
 		try {
-			Socket s = new Socket("localhost", 6666);
+			Socket s = new Socket("localhost", 19334);
 			DataOutputStream dout = new DataOutputStream(s.getOutputStream());
 			dout.writeUTF("Hello Server");
 			dout.flush();

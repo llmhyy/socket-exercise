@@ -10,7 +10,7 @@ public class SocketServer {
 	
 	public void start() {
 		try {
-			ServerSocket ss = new ServerSocket(6666);
+			ServerSocket ss = new ServerSocket(19334);
 			Socket s = ss.accept();// establishes connection
 			DataInputStream dis = new DataInputStream(s.getInputStream());
 			String str = (String) dis.readUTF();
