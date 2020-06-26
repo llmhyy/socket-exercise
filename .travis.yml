@@ -13,4 +13,4 @@ install:
 
 script:
    # branch enhancement
-   - mvn -Dtest=SocketTest test
+   - mvn -Dtest=com.SocketTest test
